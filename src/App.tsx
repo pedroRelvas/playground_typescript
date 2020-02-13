@@ -1,6 +1,10 @@
 import * as React from "react";
+import {render} from 'react-dom';
+
 import "./styles.css";
 
+import Counter from './components/Counter/Counter';
+import Clock from './components/ClassComponent/class_component'
 export default function App() {
   /*   type Todo = {
     readonly id: number;
@@ -69,8 +73,18 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <h1>Stuff</h1>
+      <p>Based on:</p>
+      <ul>
+        <li><a href="https://github.com/typescript-cheatsheets/react-typescript-cheatsheet/blob/master/README.md#basic-cheatsheet-table-of-contents">React+TypeScript Cheatsheets</a></li>
+        <li><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html">TypeScript Types</a></li>
+        <li><a href="https://alligator.io/react/typescript-with-react/">Typescript with React</a></li>
+        <li><a href="https://fettblog.eu/typescript-react/children/">Typescript guide</a></li>
+      </ul>
+      
+      <h3>Counter</h3>
+      <Counter/>
+      <Clock/>
     </div>
   );
 }
